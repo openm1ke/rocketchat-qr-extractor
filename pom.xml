@@ -52,6 +52,10 @@
 			<version>RELEASE</version>
 			<scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.java-websocket</groupId>
@@ -84,8 +88,7 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.5.6</version>
-			<scope>test</scope>
+			<version>1.4.12</version>
 		</dependency>
 
 

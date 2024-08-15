@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  rocketchat-service:
+    build: .
+    container_name: rocketchat_service
+    ports:
+      - "8080:8080"   # Пробрасываем порт приложения
+    volumes:
+      - ./logs:/app/logs  # Монтируем локальный каталог для хранения логов
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod   # Устанавливаем профиль Spring, если необходимо
+    logging:
+      driver: "json-file"  # Логи будут записываться в JSON файл в контейнере
+      options:
+        max-size: "10m"  # Ограничение размера лог-файла
+        max-file: "3"    # Количество лог-файлов для ротации
+
+volumes:
+  logs:
+    driver: local
