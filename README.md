@@ -26,7 +26,11 @@ http://localhost:8080/api/qr
 ![rocket1](./pics/rocket1.png)
 2. Переходим в раздел "Токены для личного доступа" и нажимаем "Добавить"<br>
 
-![rocket1](./pics/rocket2.png)
+![rocket2](./pics/rocket2.png)
 3. В появившемся окне копируем токен авторизации<br>
 
-![rocket1](./pics/rocket3.png)
+![rocket3](./pics/rocket3.png)
+
+Посылаем запрос в сервис и получаем строку с qr-кодом
+
+![rocket4](./pics/rocket4.png)
